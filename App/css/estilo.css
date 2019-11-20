@@ -1,0 +1,190 @@
+body{
+    background-color: silver;
+}
+/*Fuentes*/
+.contenidoHead p{
+    font-family: 'Roboto', sans-serif;
+    color: #872400;
+}
+.ContenidoPag {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #424242;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.textoPie p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #872400;
+}
+.FechaC{
+    font-family: 'Open Sans', sans-serif;
+}
+.ContenidoC{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+.Contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Hoja{
+    background-color: white;
+    width: 738px;
+    height: 968px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    overflow: hidden;
+}
+.Controles {
+    margin: 40px auto;
+    width: 450px;
+    height: 500px;
+    background-color: #828282;
+}
+/*Cabezera*/
+.Cabecera{
+   width: 100%;
+    height: 160px;
+/*    background-color: #dc4a13 */
+    display: flex;
+    justify-content: space-around;
+}
+.contenidoHead{
+    width: 444px;
+/*    background-color: aqua;*/
+    padding: 30px 30px;
+    box-sizing: border-box;
+    
+        
+}
+.logo{
+    width: 122px;
+    height: 128px;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Elementos Pie*/
+.PieHoja{
+   display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+  
+}
+
+.textoPie{
+    width: 00px;
+    margin-left: 30px;  
+        
+}
+.telefono{
+    width: 300px;    
+    color: #424242
+}
+.telefono::before{
+    content: "Telefono: ";
+    color: #424242
+}
+.Direccion{
+    width: 00px;
+    color: #424242
+}
+.Direccion::before{
+    content: "Direccion: ";
+    color: #424242
+}
+.pieIMG{
+    width: 300px;
+    height: 232px;
+/*    background-color: #d03636;*/
+    margin-top: -150px;
+}
+.pieIMG img{
+    width: 100%;
+    height: 100%;
+}
+
+/*CONTENIDO-----*/
+.ContenidoPag{
+    width: 100%;
+    z-index: 1000;
+    padding: 40px;
+    box-sizing: border-box;
+    height: 100%;
+    
+        
+}
+.ContenidoPag p{
+    white-space: normal;
+    box-sizing: border-box;
+    height: 100%;
+    word-wrap: break-word;
+        
+}
+.ContenidoPag pre{
+    white-space: normal;
+    box-sizing: border-box;
+    height: 100%;
+    word-wrap: break-word;
+        
+}
+
+
+/*CONTROLES*/
+.Controles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.botonImprimir{
+    width: 60%;
+    height: 30px;
+    margin: 20px;
+    background: #424242;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+/*PESTANAS*/
+.Pestana{
+    color: white
+}
+
+@media print {
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+    }
+    #cabecera, #menu, #lateral, #comentarios {
+  display: none !important;
+}
+    
+    body, #contenido, #principal, #pie {
+  float: none;
+  width: auto;
+  margin:  0 ;
+  padding: 0 ;
+}
+    
+}

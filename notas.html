@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="App/css/notas.css" media="all">   
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div class="ContenedorHoja">
+       <link rel="stylesheet" href="App/css/notas.css" media="all">
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+        <div class="hoja">
+           
+            <div class="Cabezera">
+                <div class="logo">
+                    <img src="App/img/Logo.svg" alt="">
+                </div>
+                <div class="Datos">
+                    <ul>
+                        <li>No.<p id="NoFolio">00000</p></li>
+                        <li>Nombre:<p id="Nombre">Nombre del cliente o la empresa</p></li>
+                        <li>Telefono:<p id="Telefono">0000000000</p></li>
+                        <li>Fecha:<p id="Fecha">0000000000</p></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="Contenido">
+                <table>
+                    <tr>
+                        <th id="Cantidad">Cantidad</th>
+                        <th id="Descripcion">Descripcion</th>
+                        <th id="Precio">Precio</th>
+                        <th id="Importe">Importe</th>
+                    </tr>               
+                    
+                </table>
+                
+                <div class="PieContenido">
+                    <label class="Subtotal" for=""></label>
+                    <label class="Adelanto" for="">00.0</label>
+                    <label class="Total" for=""></label>
+                </div>
+            </div>
+            
+            
+            <div class="piePagina">
+                <p id="TelefonoP">Telefono:</p>
+                <p id="DireccionP">Direccion:</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Controles">
+         <div class="AreaBotones">
+             <div class="Pestana PtON" id="PCabezeraNota">Cabezera</div>
+             <div class="Pestana" id="PDatosArticulos">Detalles</div>
+             <div class="Pestana" id="PAdelanto">Adelanto</div>
+             <div class="Pestana" id="PDatosPieNota">PieNota</div>
+         </div>
+          <div class="Separador ON" id="CabezeraNota">
+              <label for="">CABEZERA DE NOTA</label>
+               <label for="">No de remicion</label>
+                <input class="NoC" type="number">
+
+                <label for="">Nombre</label>
+                <input class="NombreC" type="text">
+
+                <label for="">Telefono Cliente</label>
+                <input class="TelClienteC" type="number">
+
+               <label for="">Fecha</label>
+                <input class="FechaC" type="text">
+          </div>
+            
+            <div class="Separador" id="DatosArticulos">
+                <label for="">DATOS DE LOS ARTICULOS</label>
+                <label for="">Cantidad</label>
+                <input class="CantidadC" type="number">
+
+                <label for="">Descripcion</label>
+                <input class="Descripcion" type="text">
+
+                <label for="">Precio</label>
+                <input class="Precio" type="number">
+                
+                <div class="boton botonAdd">Agregar</div>
+                <div class="boton Eliminar">Limpiar</div>
+             </div>
+             
+             <div class="Separador" id="Adelanto">
+                <label for="">ADELANTO</label>
+                <input class="Precio" type="number" id="inputAdelanto" value="">
+                
+             </div>
+             
+             
+             <div class="Separador" id="DatosPieNota">
+                 <label for="">DATOS PIE DE NOTA</label>
+                 <label for="">Telefono</label>
+                 <input class="TelefonoC" type="text">
+
+                 <label for="">Direccion</label>
+                 <input class="DireccionC" type="text">
+
+                 
+             </div>
+             <div class="boton botonImprimir">Imprimir</div>
+             
+        </div>
+        
+        <div id="ad54"></div>
+        
+        <script src="App/js/Notas.js"></script>
+</body>
+</html>

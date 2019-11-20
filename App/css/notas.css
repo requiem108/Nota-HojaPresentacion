@@ -1,0 +1,251 @@
+body{
+    background-color: silver;
+    display: flex;
+    justify-content: space-around
+}
+/*Fuentes*/
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+input{
+    font-family: 'Open Sans', sans-serif;
+}
+label{
+    font-family: 'Open Sans', sans-serif;
+}
+table{
+    font-family: 'Open Sans', sans-serif;
+}
+.hoja{
+     background-color: white;
+    width: 738px;
+    height: 474px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+
+/*CAbEZERA----------------*/
+.Cabezera{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-sizing:border-box;
+    border-bottom: solid #7b7b7b 1px
+}
+.logo{
+    width: 160px;
+    height: 145px;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+
+}
+.logo img{
+    width: 100%;
+}
+.Datos{
+    width: 100%;
+    display: flex;
+    
+}
+.Cabezera ul{
+    list-style: none;
+    padding: 0;
+    margin-left: 100px;
+    width: 100%;
+    
+   
+}
+.Cabezera ul li{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;    
+    color: #424242;
+    margin: 0;
+    line-height: 0;
+    background-color: #f89775;
+    border: solid white 1px;
+    border-radius: 10px;
+    padding: 0px 35px;
+    color: #191919
+}
+
+.Cabezera p{
+    line-height: 0;
+}
+
+/*PIE DE PAGIA--------------------*/
+.piePagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #f89775;
+    background: linear-gradient(135deg, rgba(248,151,117,1) 0%, rgba(214,74,28,1) 100%);
+   
+}
+
+.Controles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    width: 60%;
+    height: 30px;
+    margin: 5px;
+    background: #424242;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+#TelefonoP{
+    width: 300px;    
+    color: #2a2a2a
+}
+#TelefonoP::before{
+    content: "Telefono: ";
+    color:#2a2a2a
+}
+#DireccionP{
+    width: 300px;
+    color: #2a2a2a;
+     
+}
+#DireccionP::before{
+    content: "Direccion: ";
+    color: #2a2a2a;
+}
+
+
+/*CONTENIDO--------------------*/
+.Contenido{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    height: 100%;
+}
+table{
+    width: 100%;
+}
+#Cantidad{
+    width: 15%;
+}
+#Descripcion{
+    width: 50%;
+}
+#Precio{
+    width: 10%;
+}
+#Importe{
+    width: 10%;
+}
+td{
+    text-align: center;
+}
+
+.PieContenido{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5b8a2;
+    padding: 3px;
+}
+.Subtotal::before{
+    content: "Sub-total: $"
+}
+.Adelanto::before{
+    content: "Adelanto: $"
+}
+.Total::before{
+    content: "Total: $"
+}
+
+/*SEPARADORES y CONTROLES*/
+.Controles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #adadad;
+    padding: 10px
+}
+.Separador{
+    display: none;
+    width: 220px;
+    padding: 20px;
+    background-color: #909090;
+    height: 230px;
+}
+.botonImprimir{
+    width: 150px;
+}
+.boton{
+    width: 150px;
+    margin: 5px auto;
+}
+
+@media print {
+     body{
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+    }
+    #cabecera, #menu, #lateral, #comentarios {
+  display: none !important;
+}
+    
+    body, #contenido, #principal, #pie {
+  float: none;
+  width: auto;
+  margin:  0 ;
+  padding: 0 ;
+}
+}
+.OFF{
+    display: none;
+}
+.ON{
+   
+    display: flex;
+    flex-direction: column;
+}
+
+/*PESTANAS*/
+.AreaBotones{
+    width: 100%;
+    display: flex;
+    
+}
+.Pestana{
+    width: 100%;
+    height: 30px;
+    background-color: #424242;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+    border: solid silver 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #adadad;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    
+}
+.Pestana:hover{
+    background-color: rgb(170, 127, 112);
+}
+.PtON{
+    background: linear-gradient(135deg, rgba(248,151,117,1) 0%, rgba(214,74,28,1) 100%); 
+    border: none;
+    color: white;
+}
